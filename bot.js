@@ -17,8 +17,7 @@ const commandHandler = require("./commands")
 client.on("message", commandHandler);
 
 client.on("message", msg => {
-    if (msg.content == "I love vampires"){
+    if (msg.content == "I love vampires" || msg.content == "i love vampires"){
         msg.react("❤️")
-        console.log("This works?")
     }
 })
